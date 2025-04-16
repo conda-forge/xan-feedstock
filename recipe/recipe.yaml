@@ -1,5 +1,5 @@
 context:
-  version: "0.48.0"
+  version: "0.49.0"
 
 package:
   name: xan
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/medialab/xan/archive/refs/tags/${{ version }}.tar.gz
-  sha256: 6b59b653b36a42c57a24eea48a977a0302d6e03e11058996cb3ec86fc6f3405f
+  sha256: 46e73d305a9982eb219e45399590be02a24a03d97e91aa4adc080303dcaff87d
 
 build:
   number: 0
