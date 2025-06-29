@@ -58,7 +58,7 @@ about:
     Python, Lua, JavaScript etc.
   license: MIT
   license_file:
-    - LICENSE
+    - LICENSE-MIT
     - THIRDPARTY.yml
 
 extra:
