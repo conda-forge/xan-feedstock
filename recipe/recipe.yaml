@@ -42,6 +42,15 @@ requirements:
 tests:
   - script:
       - xan --help
+  - package_contents:
+      bin:
+        - xan
+      files:
+        - if: unix
+          then:
+            - share/bash-completion/completions/xan
+            - share/zsh/site-functions/_xan
+      strict: true
 
 about:
   homepage: https://github.com/medialab/xan
