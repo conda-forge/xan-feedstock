@@ -26,6 +26,11 @@ build:
           - if errorlevel 1 exit 1
           - cargo-bundle-licenses --format yaml --output %SRC_DIR%/THIRDPARTY.yml
           - if errorlevel 1 exit 1
+      - if: unix
+        then:
+          - mkdir -p $PREFIX/share/zsh/site-functions $PREFIX/share/bash-completion/completions
+          - $PREFIX/bin/xan completions zsh > $PREFIX/share/zsh/site-functions/_xan
+          - $PREFIX/bin/xan completions bash > $PREFIX/share/bash-completion/completions/xan
 
 requirements:
   build:
